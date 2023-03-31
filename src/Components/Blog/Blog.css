@@ -1,0 +1,120 @@
+/* Default styles */
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.blog-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 845px; /* Add max-width instead of fixed width */
+  margin: 0 auto; /* Center the card */
+}
+
+.blog-card__image {
+  max-width: 845px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.blog-card__image img {
+  width: 100%; /* Use width 100% to scale the image */
+  height: auto; /* Use height auto to preserve aspect ratio */
+  object-fit: cover;
+}
+
+.blog-card__content {
+  padding: 16px;
+}
+
+.blog-card__author-name {
+  margin: 0;
+}
+
+.blog-card__date-published {
+  margin: 0;
+}
+
+.blog-card__author-image {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.blog-card__author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card__title {
+  margin: 16px 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog-card__footer {
+  margin-top: 16px;
+}
+
+.blog-card__mins-read {
+  font-size: 14px;
+  color: gray;
+  display: flex;
+}
+
+.blog-card__mins-read button {
+  cursor: pointer;
+  color: gray;
+}
+
+.blog-card__mark-read {
+  border: none;
+  margin: 10px;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.blog-card__mark-read:hover {
+  color: gray;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .blog-card {
+    padding: 10px; /* Reduce padding */
+    max-width: 500px; /* Adjust max-width for smaller screens */
+  }
+
+  .blog-card__image {
+    height: 300px; /* Reduce height of image */
+  }
+
+  .blog-card__title {
+    font-size: 20px; /* Reduce font size */
+    margin: 10px; /* Adjust margin */
+  }
+
+  .blog-card__author-image {
+    width: 30px; /* Reduce size of author image */
+    height: 30px;
+    margin-right: 4px; /* Adjust margin */
+  }
+
+  .blog-card__mins-read {
+    font-size: 12px; /* Reduce font size */
+  }
+}

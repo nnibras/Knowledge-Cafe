@@ -1,0 +1,56 @@
+.spentTime {
+  width: 275px;
+  height: 60px;
+  background-color: rgba(96, 71, 236, 0.1);
+  border: 2px solid rgba(96, 71, 236, 1);
+  color: rgba(96, 71, 236, 1);
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sideBar-container {
+  width: 300px;
+  background-color: rgba(17, 17, 17, 0.05);
+  padding: 0 5px 5px 5px;
+  position: sticky;
+  top: 0;
+}
+
+.bookmarks {
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bookmark-box {
+  width: 240px;
+  background-color: white;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  /* spentTime */
+  .spentTime {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  /* sideBar-container */
+  .sideBar-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* bookmark-box */
+  .bookmark-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}

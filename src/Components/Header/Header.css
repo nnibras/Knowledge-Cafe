@@ -1,0 +1,51 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.header hr {
+  color: rgba(17, 17, 17, 0.15);
+  display: none;
+}
+
+.header nav a:hover {
+  color: purple;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .header nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header nav a {
+    margin: 10px 0;
+  }
+
+  .header nav a:first-child {
+    margin-top: 0;
+  }
+
+  .header nav a:last-child {
+    margin-bottom: 0;
+  }
+}
